@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Document</title>
+    <style>
+
+
+.nav-img{
+            width: 100px;
+            height: 50px;
+        }
+      .social-icon{
+        margin-left: 30px;
+      }
+
+      .social-icon:hover{
+        transform: scale(1.5);
+      }
+      .imganddec{
+       border: 3px solid red;
+      }
+
+
+      .search-sec{
+    padding: 1rem;
+    
+}
+
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    color: #080909;
+    background-color: #fafafa;
+    background-image: none;
+   
+    height: calc(2.5rem + 2.5px) !important;
+    border-radius:5px;
+  
+}
+
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(2.5rem + 2px) !important;
+    border-radius:5px;
+}
+.filter-for-search{
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+ 
+  
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        
+            <a class="navbar-brand" href="#"> <img src="../3/assets/img/Star Cars Logo.png" alt="" class="nav-img"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  New
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Build A Price</a></li>
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">New Car Listings</a></li>
+                  <li><a class="dropdown-item" href="#">New EVs</a></li>
+                  <li><a class="dropdown-item" href="#">New SUVs</a></li>
+                  <li><a class="dropdown-item" href="#">New Car Trucks</a></li>
+                  <li><a class="dropdown-item" href="#">New Vans</a></li>
+                  <li><a class="dropdown-item" href="#">New Convertibles</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Car For Sale
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Accidental Cars</a></li>
+                  <li><a class="dropdown-item" href="#">Shipping Services</a></li>
+                
+                </ul>
+              </li>
+  
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cargo
+                </a>
+              </li>
+              
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+              </li>
+  
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+              </li>
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+              </li>
+  
+            </ul>
+  
+  
+      
+            <div class="d-flex align-items-center"> 
+                <button class="btn btn-primary btn-lg" type="submit" class="btn-for-report"> <a href="../3/report-page/signup.html" target="_blank" style="color:white; text-decoration: none;">Report </a> </button>
+                <div class="dropdown dropdown-account"> 
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../3/assets/img/account 2 icon.png" alt="" class="account-icon">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a  class="dropdown-item" href="#" target="_blank">Sign In</a></li>
+                        <li><a  class="dropdown-item" href="#" target="_blank">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- herader end -->
+<br><br>
+
+<!-- filter session start -->
+
+  <section class="filter-for-search">
+  <section class="search-sec">
+    <div class="container">
+        <form action="#" method="post" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+  
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                         
+                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+                              <option disabled selected>Make</option>
+                              <option>Toyota</option>
+                              <option>Nissan</option>
+                              <option>Lexus</option>
+                              <option>Mercedes</option>
+                              <option>Hyundai</option>
+                              <option>Honda</option>
+                              <option>Jeep</option>
+                              <option>Ford</option>
+                              <option>Dodge</option>
+                              <option>Chevrolet</option>
+                              <option>Bmw</option>
+                              <option>Gmc</option>
+                              <option>Land Rover</option>
+                              <option>Mitsubishi</option>
+                              <option>Kia Motors</option>
+                              <option>Infiniti</option>
+                              <option>Mazda</option>
+                              <option>Mini</option>
+                              <option>Volkswagen</option>
+                              <option>Chrysler</option>
+                              <option>Suzuki</option>
+                              <option>Porsche</option>
+                              <option>Audi</option>
+                              <option>MG</option>
+                              <option>Subaru</option>
+                              <option>Changan</option>
+                              <option>Renault</option>
+                              <option>Ram</option>
+                              <option>Genesis</option>
+                              <option>Cadillac</option>
+                              <option>Geely</option>
+                              <option>Lincoln</option>
+                              <option>Jaguar</option>
+                              <option>Scion</option>
+                              <option>Bentley</option>
+                              <option>Great Wall</option>
+                              <option>Fiat</option>
+                              <option>Diahatsu</option>
+                              <option>Haval</option>
+                              <option>Tesla</option>
+                              <option>Isuzu</option>
+                              <option>Ssangyong</option>
+                              <option>Maserati</option>
+                              <option>Alfa Romeo</option>
+                              <option>Jac</option>
+                              <option>Baic</option>
+                              <option>Jetour</option>
+                              <option>Bestune</option>
+                              <option>Mercury</option>
+                              <option>Peugeot</option>
+                              <option>Citroen</option>
+                              <option>Foton</option>
+                              <option>Hummer</option>
+                              <option>Lamborghini</option>
+                              <option>Proton</option>
+                              <option>Gac</option>
+                              <option>Volvo</option>
+                              <option>Sling Shot</option>
+                              <option>Aston Martin</option>
+                              <option>Brilliance</option>
+                              <option>Ferrari</option>
+                              <option>Mclaren</option>
+                              <option>Pagani</option>
+                              <option>Hongqi</option>
+                              <option>Golden Dragon</option>
+                              <option>CMC</option>
+                              <option>CEVO</option>
+                              
+  
+                          </select>
+                        </div>
+  
+  
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                          <input type="text" class="form-control search-slt" placeholder="Model">
+                      </div>
+  
+  
+                        <div class="col-lg-2 col-md-3 col-sm-12 p-0">
+                           
+  
+                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+                              <option disabled selected>Year(From)</option>
+                              <option>2024</option>
+                              <option>2023</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                              <option>2020</option>
+                              <option>2019</option>
+                              <option>2018</option>
+                              <option>2017</option>
+                              <option>2016</option>
+                              <option>2015</option>
+                              <option>2014</option>
+                              <option>2013</option>
+                              <option>2012</option>
+                              <option>2011</option>
+                              <option>2010</option>
+                              <option>2009</option>
+                              <option>2008</option>
+                              <option>2007</option>
+                              <option>2006</option>
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2003</option>
+  
+                              <option>2002</option>
+  
+                              <option>2001</option>
+                              <option>2000</option>
+  
+  
+  
+                          </select>
+                        </div>
+  
+  
+                        <div class="col-lg-2 col-md-3 col-sm-12 p-0">
+                            <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                <option>Year(To)</option>
+                                <option>2024</option>
+                              <option>2023</option>
+                              <option>2022</option>
+                              <option>2021</option>
+                              <option>2020</option>
+                              <option>2019</option>
+                              <option>2018</option>
+                              <option>2017</option>
+                              <option>2016</option>
+                              <option>2015</option>
+                              <option>2014</option>
+                              <option>2013</option>
+                              <option>2012</option>
+                              <option>2011</option>
+                              <option>2010</option>
+                              <option>2009</option>
+                              <option>2008</option>
+                              <option>2007</option>
+                              <option>2006</option>
+                              <option>2005</option>
+                              <option>2004</option>
+                              <option>2003</option>
+                              <option>2003</option>
+  
+                              <option>2002</option>
+  
+                              <option>2001</option>
+                              <option>2000</option>
+  
+                            </select>
+                        </div>
+  
+  
+  
+                        <div class="col-lg-2 col-md-3 col-sm-12 p-0">
+                            <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+  </section>
+  
+  </section> 
+
+  <br><br>
+<!-- search filter end -->
+
+
+    <section style="background-color: #f8f3f3;" class="detailed-cards" >
+
+          <div class="container py-6" class="imganddec">
+            <div class="row justify-content-center mb-3">
+              <div class="col-md-12 col-xl-10">
+                <div class="card shadow-0 border rounded-3">
+                  <div class="card-body">
+                    <div class="row">
+
+                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                          <img src="../3/assets/img/vin cars.jpg"
+                            class="w-100" />
+                          <a href="#!">
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6 col-lg-6 col-xl-6">
+                        <h5>$ 310</h5>
+
+                        <h5> Used toyota and land curuser </h5>
+                        <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                      
+                        
+                        <div class="mt-4 mb-3 text-muted small">
+                          <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                          <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                          <span>Import |</span>
+                          <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                          <span>2023 |</span>
+                          <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                          <span>0 KM</span>
+                        </div>
+  
+                        <div class="mb-3  text-muted small">
+                          
+                          <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                          <span> </span>
+                          <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                          <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                        <div class="d-flex flex-column mt-2">
+                          <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+            <div class="container py-6">
+                <div class="row justify-content-center mb-3">
+                  <div class="col-md-12 col-xl-10">
+                    <div class="card shadow-0 border rounded-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                            <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                              <img src="../3/assets/img/vin cars.jpg"
+                                class="w-100" />
+                              <a href="#!">
+                                <div class="hover-overlay">
+                                  <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-6 col-xl-6">
+                            <h5>$ 310</h5>
+    
+                            <h5> Used toyota and land curuser </h5>
+                            <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                          
+                            
+                            <div class="mt-4 mb-3 text-muted small">
+                              <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                              <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                              <span>Import |</span>
+                              <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                              <span>2023 |</span>
+                              <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                              <span>0 KM</span>
+                            </div>
+      
+                            <div class="mb-3  text-muted small">
+                              
+                              <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                              <span> </span>
+                              <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                              <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                            <div class="d-flex flex-column mt-2">
+                              <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="container py-6">
+                    <div class="row justify-content-center mb-3">
+                      <div class="col-md-12 col-xl-10">
+                        <div class="card shadow-0 border rounded-3">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                  <img src="../3/assets/img/vin cars.jpg"
+                                    class="w-100" />
+                                  <a href="#!">
+                                    <div class="hover-overlay">
+                                      <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-6 col-xl-6">
+                                <h5>$ 310</h5>
+        
+                                <h5> Used toyota and land curuser </h5>
+                                <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                              
+                                
+                                <div class="mt-4 mb-3 text-muted small">
+                                  <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                  <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                  <span>Import |</span>
+                                  <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                  <span>2023 |</span>
+                                  <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                  <span>0 KM</span>
+                                </div>
+          
+                                <div class="mb-3  text-muted small">
+                                  
+                                  <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                  <span> </span>
+                                  <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                  <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                <div class="d-flex flex-column mt-2">
+                                  <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+
+
+
+
+
+                    <div class="container py-6">
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="../3/assets/img/vin cars.jpg"
+                                        class="w-100" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>$ 310</h5>
+            
+                                    <h5> Used toyota and land curuser </h5>
+                                    <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                                  
+                                    
+                                    <div class="mt-4 mb-3 text-muted small">
+                                      <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                      <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                      <span>Import |</span>
+                                      <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                      <span>2023 |</span>
+                                      <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                      <span>0 KM</span>
+                                    </div>
+              
+                                    <div class="mb-3  text-muted small">
+                                      
+                                      <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                      <span> </span>
+                                      <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                      <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-column mt-2">
+                                      <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                        <div class="container py-6">
+                            <div class="row justify-content-center mb-3">
+                              <div class="col-md-12 col-xl-10">
+                                <div class="card shadow-0 border rounded-3">
+                                  <div class="card-body">
+                                    <div class="row">
+                                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                          <img src="../3/assets/img/vin cars.jpg"
+                                            class="w-100" />
+                                          <a href="#!">
+                                            <div class="hover-overlay">
+                                              <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 col-lg-6 col-xl-6">
+                                        <h5>$ 310</h5>
+                
+                                        <h5> Used toyota and land curuser </h5>
+                                        <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                                      
+                                        
+                                        <div class="mt-4 mb-3 text-muted small">
+                                          <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                          <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                          <span>Import |</span>
+                                          <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                          <span>2023 |</span>
+                                          <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                          <span>0 KM</span>
+                                        </div>
+                  
+                                        <div class="mb-3  text-muted small">
+                                          
+                                          <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                          <span> </span>
+                                          <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                          <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                        <div class="d-flex flex-column mt-2">
+                                          <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                            <div class="container py-6">
+                                <div class="row justify-content-center mb-3">
+                                  <div class="col-md-12 col-xl-10">
+                                    <div class="card shadow-0 border rounded-3">
+                                      <div class="card-body">
+                                        <div class="row">
+                                          <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                            <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                              <img src="../3/assets/img/vin cars.jpg"
+                                                class="w-100" />
+                                              <a href="#!">
+                                                <div class="hover-overlay">
+                                                  <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                                </div>
+                                              </a>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6 col-lg-6 col-xl-6">
+                                            <h5>$ 310</h5>
+                    
+                                            <h5> Used toyota and land curuser </h5>
+                                            <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                                          
+                                            
+                                            <div class="mt-4 mb-3 text-muted small">
+                                              <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                              <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                              <span>Import |</span>
+                                              <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                              <span>2023 |</span>
+                                              <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                              <span>0 KM</span>
+                                            </div>
+                      
+                                            <div class="mb-3  text-muted small">
+                                              
+                                              <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                              <span> </span>
+                                              <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                              <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                            <div class="d-flex flex-column mt-2">
+                                              <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+                                <div class="container py-6">
+                                    <div class="row justify-content-center mb-3">
+                                      <div class="col-md-12 col-xl-10">
+                                        <div class="card shadow-0 border rounded-3">
+                                          <div class="card-body">
+                                            <div class="row">
+                                              <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                  <img src="../3/assets/img/vin cars.jpg"
+                                                    class="w-100" />
+                                                  <a href="#!">
+                                                    <div class="hover-overlay">
+                                                      <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-lg-6 col-xl-6">
+                                                <h5>$ 310</h5>
+                        
+                                                <h5> Used toyota and land curuser </h5>
+                                                <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                                              
+                                                
+                                                <div class="mt-4 mb-3 text-muted small">
+                                                  <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                                  <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                                  <span>Import |</span>
+                                                  <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                                  <span>2023 |</span>
+                                                  <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                                  <span>0 KM</span>
+                                                </div>
+                          
+                                                <div class="mb-3  text-muted small">
+                                                  
+                                                  <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                                  <span> </span>
+                                                  <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                                  <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                <div class="d-flex flex-column mt-2">
+                                                  <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                    <div class="container py-6">
+                                        <div class="row justify-content-center mb-3">
+                                          <div class="col-md-12 col-xl-10">
+                                            <div class="card shadow-0 border rounded-3">
+                                              <div class="card-body">
+                                                <div class="row">
+                                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                      <img src="../3/assets/img/vin cars.jpg"
+                                                        class="w-100" />
+                                                      <a href="#!">
+                                                        <div class="hover-overlay">
+                                                          <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                                    <h5>$ 310</h5>
+                            
+                                                    <h5> Used toyota and land curuser </h5>
+                                                    <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                                                  
+                                                    
+                                                    <div class="mt-4 mb-3 text-muted small">
+                                                      <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                                      <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                                      <span>Import |</span>
+                                                      <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                                      <span>2023 |</span>
+                                                      <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                                      <span>0 KM</span>
+                                                    </div>
+                              
+                                                    <div class="mb-3  text-muted small">
+                                                      
+                                                      <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                                      <span> </span>
+                                                      <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                                      <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                    <div class="d-flex flex-column mt-2">
+                                                      <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                        <div class="container py-6">
+                                            <div class="row justify-content-center mb-3">
+                                              <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                  <div class="card-body">
+                                                    <div class="row">
+                                                      <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                        <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                          <img src="../3/assets/img/vin cars.jpg"
+                                                            class="w-100" />
+                                                          <a href="#!">
+                                                            <div class="hover-overlay">
+                                                              <div class="mask" style="background-color: rgba(206, 53, 23, 0.15);"></div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6 col-lg-6 col-xl-6">
+                                                        <h5>$ 310</h5>
+                                
+                                                        <h5> Used toyota and land curuser </h5>
+                                                        <p>Toyota Land Cruiser GXR TWIN TURBO 3.5L A/T, PETROL, PUSH 2023</p>
+                                                      
+                                                        
+                                                        <div class="mt-4 mb-3 text-muted small">
+                                                          <span  > <img src="../3/assets/img/location icons.png" alt="" > Dubai |</span>
+                                                          <span class="text-primary "> <img src="../3/assets/img/world icons.png" alt="" > </span>
+                                                          <span>Import |</span>
+                                                          <span class="text-primary"> <img src="../3/assets/img/calendar.png" alt=""> </span>
+                                                          <span>2023 |</span>
+                                                          <span class="text-primary"> <img src="../3/assets/img/METER.png" alt=""> </span>
+                                                          <span>0 KM</span>
+                                                        </div>
+                                  
+                                                        <div class="mb-3  text-muted small">
+                                                          
+                                                          <span class="text-primary"> <img src="../3/assets/img/phone icon.png" alt="" class="social-icon"> </span>
+                                                          <span> </span>
+                                                          <span class="text-primary">  <img src="../3/assets/img/whatsapp icon.png" alt="" class="social-icon"></span>
+                                                          <span  class="text-primary">  <img src="../3/assets/img/mailing.png" alt="" class="social-icon"> </span>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                        <div class="d-flex flex-column mt-2">
+                                                          <img src="../3/assets/img/black-logo.png" alt="" style="width: 100px;">
+                                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,,</p>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>      
+      </section>
+</body>
+</html>

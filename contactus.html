@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Document</title>
+    <style>
+
+.nav-img{
+            width: 100px;
+            height: 50px;
+        }
+
+        /* hero img css start */
+        .item {
+  position: relative;
+  overflow: hidden;
+}
+.item img {
+ width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+    height: 270px;
+    cursor: all-scroll;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.para{
+    background-color: #000;
+    padding-bottom: 15px;
+}
+.para p{
+    font-size: 20px;
+    color: #fff;
+}
+ /* hero img comment session start  */
+ .contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+ 
+/* form and side css */
+
+
+      
+    </style>
+</head>
+<body>
+    <!-- header start -->
+
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        
+            <a class="navbar-brand" href="#"> <img src="../assets/img/Star Cars Logo.png" alt="" class="nav-img"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  New
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Build A Price</a></li>
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="#">New Car Listings</a></li>
+                  <li><a class="dropdown-item" href="#">New EVs</a></li>
+                  <li><a class="dropdown-item" href="#">New SUVs</a></li>
+                  <li><a class="dropdown-item" href="#">New Car Trucks</a></li>
+                  <li><a class="dropdown-item" href="#">New Vans</a></li>
+                  <li><a class="dropdown-item" href="#">New Convertibles</a></li>
+                </ul>
+              </li>
+  
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Used
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Buy Online</a></li>
+                  <li><a class="dropdown-item" href="#">Used Cars Research</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Used EVs</a></li>
+                  <li><a class="dropdown-item" href="#">Used SUVs</a></li>
+                  <li><a class="dropdown-item" href="#">Used Trucks</a></li>
+                  <li><a class="dropdown-item" href="#">Used Vans</a></li>
+               
+                  <li><a class="dropdown-item" href="#">Used Convertibles</a></li>
+                </ul>
+              </li>
+  
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Electric
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">EV Hub</a></li>
+                  <li><a class="dropdown-item" href="#">New Evs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Used Evs</a></li>
+                  <li><a class="dropdown-item" href="#">Used Teslas</a></li>
+                  <li><a class="dropdown-item" href="#">EV Incentives</a></li>
+                  <li><a class="dropdown-item" href="#">EV Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Best EVs</a></li>
+                  <li><a class="dropdown-item" href="#">Buyer's Guide</a></li>
+                </ul>
+              </li>
+  
+  
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Research
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Car Reviews</a></li>
+                  <li><a class="dropdown-item" href="#">Car Ranking</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Car Finder Quiz</a></li>
+                  <li><a class="dropdown-item" href="#">Buying Power Calculator</a></li>
+                  <li><a class="dropdown-item" href="#">Auto Loan Calculator</a></li>
+                  <li><a class="dropdown-item" href="#">Lease a Cars</a></li>
+                  <li><a class="dropdown-item" href="#">Compare Cars</a></li>
+                  <li><a class="dropdown-item" href="#">Electric Vehicle</a></li>
+                  <li><a class="dropdown-item" href="#">Research Center</a></li>
+                </ul>
+              </li>
+  
+  
+              
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+              </li>
+  
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+              </li>
+              <li >
+                <a class="nav-link active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+              </li>
+  
+            </ul>
+  
+  
+      
+            <div class="d-flex align-items-center"> 
+                <button class="btn btn-primary btn-lg" type="submit" class="btn-for-report"> <a href="../3/report-page/signup.html" target="_blank" style="color:white;">Report </a> </button>
+                <div class="dropdown dropdown-account"> 
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/img/account 2 icon.png" alt="" class="account-icon">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a  class="dropdown-item" href="#" target="_blank">Sign In</a></li>
+                        <li><a  class="dropdown-item" href="#" target="_blank">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- header end -->
+      <!-- hero img session start -->
+
+      <div class="container" class="bg-dark">
+        <div class="item">
+          <br><br>
+                    <div class="item-overlay top"></div>
+                          </div>
+              <div class="para text-center">   
+                         
+                           <h4>  <a href="" class="text-light" style="text-decoration: none;">Cotact Us</a> </h4> 
+                             <h2 class="text-danger"> <a href="" class="text-danger" style="text-decoration: none;">Click Go Home</a> </h2>
+                            </div>      
+      </div>
+ <!-- hero img session end -->
+
+ <!-- img location comment session  -->
+
+ <div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="../assets/img/fee cra.jpg" alt="Left Image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+                            <h3>Ask Question?</h3>
+            <form action="submit_form.php" method="post" class="bg-light">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div> -->
+                <div class="form-group">
+                    <label for="number">Number:</label>
+                    <input type="tel" class="form-control" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" id="comment" name="comment" required></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" class="btn-of-form" class="mt-2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- ask question session -->
+
+<section class="AskQuestion btn-lg  bg-dark"    >
+    <div class="container mt-4  col-md-9">
+      <div class="row">
+          <div class="col-md-6">
+              <h3 class="text-white  " >Do You Have Question?</h3>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end align-items-center">
+              <button type="button" class="btn btn-danger btn-lg mb-3">Get In Touch</button>
+
+             
+          </div>
+      </div>
+  </div>
+</section>
+
+<br>
+
+
+<!-- faqs start -->
+
+
+ <!-- footer -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span> <h4> Get Connected With Us On Social Networks:  </h4></span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset" target="_blank">
+              <i class="fab fa-facebook" > <img src="../3/assets/img/facebook icons.png" alt=""> </i>
+            </a>
+    
+            <a href="https://wa.me/+96890623000" class="me-4 text-reset" target="_blank">
+              <i class="bi bi-whatsapp"> <img src="../3/assets/img/whatsapp icon.png" alt=""> </i>
+            </a>
+    
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"> <img src="../3/assets/img/twitter icons.png" alt=""> </i>
+            </a>
+    
+            <a href="https://www.instagram.com/star_cars_auctions/?hl=en" class="me-4 text-reset">
+              <i class="fab fa-instagram"> <img src="../3/assets/img/instagram icons.png" alt="">  </i>
+            </a>
+    
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+    
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+    
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Star Cars
+                </h6>
+                <p>
+                  Starcars is one of the leading companies at the national level for importing and sales of a wide variety of automobiles. The list includes Cars, Motorcycles, Boats, Heavy Duty Trucks, Recreational Vehicles, Trailers, ATV and Industrial Equipments of all Top brands in the USA.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Popular Models
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset"> Toyota Camry for sale in Oman</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset"> Lexus Es for sale in Oman</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset"> Lexus GS for sale in Oman</a>
+                </p>
+    
+                <p>
+                  <a href="#!" class="text-reset">Lexus IS for sale in Oman</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> J682+74G, Al Mazoon St, Seeb</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  starcarsheadoffice@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i>+96879900047</p>
+                <p><i class="fas fa-print me-3"></i>+96890623000</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-reset fw-bold" href="https://starcars.om/">starcars.om</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer end-->
+</body>
+</html>
